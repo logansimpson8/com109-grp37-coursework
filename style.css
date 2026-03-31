@@ -100,6 +100,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    border: none;
+    font-size: 16px;
 }
 
 .btn-dark:hover {
@@ -169,6 +171,54 @@ body {
 .box p {
     color: #999;
     font-size: 14px;
+}
+
+.contact {
+    padding: 80px 50px;
+    background: #0f0f0f;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    color: #ff6b35;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    background: #1a1a1a;
+    border: 2px solid #ff6b35;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background: #2a2a2a;
 }
 
 footer {
