@@ -8,6 +8,11 @@
 body {
     background-color: #0f0f0f;
     color: white;
+    scroll-behavior: smooth;
+}
+
+#about-scroll {
+    scroll-margin-top: 200px;
 }
 
 .navbar {
@@ -56,24 +61,28 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 70px;
+    position: relative;
 }
 
 .hero h1 {
-    font-size: 60px;
+    font-size: 100px;
     color: #ff6b35;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin-bottom: 30px;
+    font-size: 24px;
+    max-width: 700px;
+    margin-bottom: 40px;
     color: #ccc;
 }
 
 .buttons {
     display: flex;
     gap: 15px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .btn-light {
@@ -90,6 +99,7 @@ body {
 .btn-light:hover {
     background: #ff6b35;
     color: black;
+    transform: translateY(-5px);
 }
 
 .btn-dark {
@@ -106,10 +116,11 @@ body {
 
 .btn-dark:hover {
     background: #ff8555;
+    transform: translateY(-5px);
 }
 
 .about {
-    padding: 80px 50px;
+    padding: 100px 50px;
     background: #1a1a1a;
     text-align: center;
 }
@@ -151,7 +162,7 @@ body {
 
 .box img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -174,7 +185,7 @@ body {
 }
 
 .contact {
-    padding: 80px 50px;
+    padding: 150px 50px;
     background: #0f0f0f;
     text-align: center;
 }
@@ -208,6 +219,7 @@ body {
     color: white;
     font-size: 16px;
     font-family: Arial, sans-serif;
+    transition: 0.3s;
 }
 
 .contact-form input::placeholder,
@@ -219,6 +231,7 @@ body {
 .contact-form textarea:focus {
     outline: none;
     background: #2a2a2a;
+    transform: scale(1.02);
 }
 
 footer {
