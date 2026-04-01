@@ -13,8 +13,86 @@ html {
 body {
     background-color: #0f0f0f;
     color: white;
-    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#themeToggle {
+    color: #ffffff; 
+    border-color: #ffffff; 
+}
+
+.nav-links a:hover,
+#themeToggle:hover {
+    color: #ff9800; 
+    border-color: #ff9800;
+}
+
+/* Light mode styles */
+
+body.light-mode {
+    background-color: #e5e7eb; /* Changed to match the grey sections perfectly! */
+    color: #111111;
+}
+
+body.light-mode .navbar {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ff6b35;
+}
+
+body.light-mode .nav-links a {
+    color: #111111; 
+}
+
+body.light-mode #themeToggle {
+    color: #111111;
+    border-color: #111111; 
+}
+
+body.light-mode .nav-links a:hover,
+body.light-mode #themeToggle:hover {
+    color: #ff9800;
+    border-color: #ff9800;
+}
+
+
+body.light-mode .box,
+body.light-mode .form-success-content {
+    background-color: #ffffff;
+    color: #111111;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+body.light-mode .form-success-content h3, 
+body.light-mode .form-success-content p {
+    color: #111111;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+    background-color: #f4f4f4;
+    color: #111;
+    border: 1px solid #ccc;
+    border: 2px solid #ff6b35; 
+}
+
+body.light-mode .about, 
+body.light-mode .contact,
+body.light-mode footer {
+    background-color: #e5e7eb;
+    color: #111111;
+}
+
+body.light-mode .bg-video {
+    filter: brightness(0.8); 
+}
+
+body.light-mode .about h2,
+body.light-mode .contact h2,
+body.light-mode .about p,
+body.light-mode .contact p {
+    color: #111111;
+}
+
 
 .logo a {
     text-decoration: none;
@@ -76,7 +154,9 @@ body {
     height: 100%;
     object-fit: cover; 
     z-index: -1;   
-    opacity: 0.6;   
+    filter: brightness(0.35); 
+    transition: filter 0.4s ease;
+    
 }
 
 .landing-content {
@@ -232,6 +312,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: rgba(255, 152, 0, 0.08); 
+    border: 2px solid #ff6b35; 
+    border-radius: 16px; 
+    padding: 40px; 
 }
 
 .contact-form input,
@@ -242,7 +326,6 @@ body {
     border-radius: 5px;
     color: white;
     font-size: 16px;
-    font-family: Arial, sans-serif;
     transition: 0.3s;
 }
 
@@ -259,8 +342,6 @@ body {
 }
 
 footer {
-    background: black;
-    padding: 20px;
     border-top: 2px solid #ff6b35;
 }
 
@@ -297,4 +378,13 @@ footer {
 .form-success-content p {
     color: #444;
     margin-bottom: 20px;
+}
+
+.orange-bar {
+    border: none;
+    height: 4px;
+    background-color: #ff6b35; 
+    width: 80%; 
+    margin: 0 auto; 
+    border-radius: 2px; 
 }
