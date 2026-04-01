@@ -30,7 +30,7 @@ body {
 /* Light mode styles */
 
 body.light-mode {
-    background-color: #e5e7eb; /* Changed to match the grey sections perfectly! */
+    background-color: #e5e7eb; 
     color: #111111;
 }
 
@@ -71,7 +71,6 @@ body.light-mode .contact-form input,
 body.light-mode .contact-form textarea {
     background-color: #f4f4f4;
     color: #111;
-    border: 1px solid #ccc;
     border: 2px solid #ff6b35; 
 }
 
@@ -387,4 +386,72 @@ footer {
     width: 80%; 
     margin: 0 auto; 
     border-radius: 2px; 
+}
+
+/* mobile fixing */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #themeToggle {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .landing h1 {
+        font-size: 50px; 
+        border-bottom: 30px;
+    }
+
+    .landing p {
+        font-size: 18px;
+        padding: 0 20px;
+        border-bottom: 30px;
+    }
+
+    .buttons {
+        flex-direction: column; 
+        width: 100%;
+        align-items: center;
+        gap : 58px;
+    }
+
+    .btn-light, .btn-dark {
+        width: 85%;   
+        padding: 18px 0;    
+        font-size: 18px;    
+        font-weight: bold;    
+        text-align: center;
+        border-radius: 8px;   
+    }
+
+    .boxes {
+        grid-template-columns: 1fr; 
+        padding: 0 10px;
+    }
+
+    .about, .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .orange-bar {
+        width: 96%; 
+    }
 }
