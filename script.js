@@ -47,3 +47,23 @@ themeToggleBtn.addEventListener('click', function() {
         themeToggleBtn.textContent = 'Light Mode'; 
     }
 });
+
+// back to top button logic
+const backToTopBtn = document.getElementById('backToTop');
+
+window.onscroll = function() {
+    // this makes the button appear after scrolling down 300px, and disappear when above that cause why would you need it before that.
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+};
+
+//keeping the nice trans 
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
