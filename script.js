@@ -78,3 +78,14 @@ backToTopBtn.addEventListener('click', () => {
     });
 });
 
+// bug fix - this will hopefully force the video to play on mobile automatically
+const bgVideo = document.querySelector('.bg-video');
+
+if (bgVideo) {
+    bgVideo.play().catch(() => {
+        document.addEventListener('touchstart', () => {
+            bgVideo.play();
+        }, { once: true });
+    });
+}
+

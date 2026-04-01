@@ -145,6 +145,10 @@ body.light-mode .contact p {
 
 }
 
+video::-webkit-media-controls { /* regradless if video plays or not, this is gonna hide that play video button thing */
+    display: none !important;
+}
+
 .bg-video {
     position: absolute;
     top: 0;
@@ -402,30 +406,21 @@ footer {
 }
 
 .control-btn {
-    /* Reset any inherited button styles */
     width: 50px !important;
     height: 50px !important;
     padding: 0 !important; 
     margin: 0;
-    
-    /* Shape and Color */
     background-color: #ff6b35;
     color: white;
     border: none;
     border-radius: 50%;
-    
-    /* Centering the Letter/Icon */
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    /* Text appearance */
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    
-    cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.1s ease;
 }
