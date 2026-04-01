@@ -389,27 +389,57 @@ footer {
 }
 
 
+/* mobile optm*/
 
-/* mobile fixing */
-
-.back-to-top {
+.floating-controls {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #ff6b35; 
+    bottom: 40px; 
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1001;
+}
+
+.control-btn {
+    /* Reset any inherited button styles */
+    width: 50px !important;
+    height: 50px !important;
+    padding: 0 !important; 
+    margin: 0;
+    
+    /* Shape and Color */
+    background-color: #ff6b35;
     color: white;
     border: none;
-    border-radius: 50%; 
-    font-size: 24px;
+    border-radius: 50%;
+    
+    /* Centering the Letter/Icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Text appearance */
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    
     cursor: pointer;
-    display: none; 
-    z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, opacity 0.3s;
+    transition: transform 0.1s ease;
 }
+
+    #backToTop {
+        display: none; 
+        padding-top: 10px;
+    }
+
+
+    body.light-mode .control-btn {
+        color: #111111;
+        background-color: #ff6b35; 
+    }
 
 .back-to-top:active {
     transform: scale(0.9); 

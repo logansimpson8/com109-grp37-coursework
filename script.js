@@ -21,32 +21,42 @@ closeBtn.addEventListener('click', function() {
     });
 });
 
-// light mode toggle logic
-
-const themeToggleBtn = document.getElementById('themeToggle');
+// light mode toggle logic -- inlcuding the mobile button
+const themeButtons = document.querySelectorAll('.themeToggle');
 const body = document.body;
-const currentTheme = localStorage.getItem('theme');
 
-// the pre check for whatever user had last time
-if (currentTheme === 'light') {
-    body.classList.add('light-mode');
-    themeToggleBtn.textContent = 'Dark Mode';
-} else {
-    themeToggleBtn.textContent = 'Light Mode';
+function applyTheme(isLight) {
+    if (isLight) {
+        body.classList.add('light-mode');
+    } else {
+        body.classList.remove('light-mode');
+    }
+
+    themeButtons.forEach(btn => {
+        // ive to do this cause otherwise it was just giving a white box with the full text
+        if (btn.classList.contains('control-btn')) {
+            btn.textContent = isLight ? 'D' : 'L';
+        } else {
+            btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+        }
+    });
 }
 
-// the manual switch logic
-themeToggleBtn.addEventListener('click', function() {
 
-    body.classList.toggle('light-mode');
-    if (body.classList.contains('light-mode')) {
-        localStorage.setItem('theme', 'light'); 
-        themeToggleBtn.textContent = 'Dark Mode'; 
-    } else {
-        localStorage.setItem('theme', 'dark'); 
-        themeToggleBtn.textContent = 'Light Mode'; 
-    }
+const savedTheme = localStorage.getItem('theme');
+applyTheme(savedTheme === 'light');
+
+themeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const isCurrentlyLight = body.classList.contains('light-mode');
+        const newTheme = !isCurrentlyLight;
+        
+        localStorage.setItem('theme', newTheme ? 'light' : 'dark');
+        applyTheme(newTheme);
+    });
 });
+
+
 
 // back to top button logic
 const backToTopBtn = document.getElementById('backToTop');
@@ -67,3 +77,4 @@ backToTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
