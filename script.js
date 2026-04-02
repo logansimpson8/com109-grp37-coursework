@@ -1,91 +1,81 @@
+$(document).ready(function() { // now using j query
 
-
-// form submission box logic
-
-const form = document.querySelector('.contact-form');
-const overlay = document.getElementById('successform');
-const closeBtn = document.getElementById('closeformBtn');
-
-form.addEventListener('submit', function(event) { 
-    event.preventDefault();    
-    overlay.style.display = 'flex'; 
-    form.reset();            
-});
-
-
-closeBtn.addEventListener('click', function() {
-    overlay.style.display = 'none'; 
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    // contact us form submission
+    $('.contact-form').on('submit', function(event) {
+        event.preventDefault();
+        $('#successform').fadeIn();
+        this.reset();
     });
-});
 
-// light mode toggle logic -- inlcuding the mobile button
-const themeButtons = document.querySelectorAll('.themeToggle');
-const body = document.body;
+    $('#closeformBtn').on('click', function() {
+        $('#successform').fadeOut();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
 
-function applyTheme(isLight) {
-    if (isLight) {
-        body.classList.add('light-mode');
-    } else {
-        body.classList.remove('light-mode');
+    // light mode toggle
+    const $body = $('body');
+    const $themeButtons = $('.themeToggle');
+
+    function applyTheme(isLight) {
+        if (isLight) {
+            $body.addClass('light-mode');
+        } else {
+            $body.removeClass('light-mode');
+        }
+
+        $themeButtons.each(function() {
+            if ($(this).hasClass('control-btn')) {
+                $(this).text(isLight ? 'D' : 'L');
+            } else {
+                $(this).text(isLight ? 'Dark Mode' : 'Light Mode');
+            }
+        });
     }
 
-    themeButtons.forEach(btn => {
-        // ive to do this cause otherwise it was just giving a white box with the full text
-        if (btn.classList.contains('control-btn')) {
-            btn.textContent = isLight ? 'D' : 'L';
-        } else {
-            btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
-        }
-    });
-}
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme === 'light');
 
-
-const savedTheme = localStorage.getItem('theme');
-applyTheme(savedTheme === 'light');
-
-themeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const isCurrentlyLight = body.classList.contains('light-mode');
+    $themeButtons.on('click', function() {
+        const isCurrentlyLight = $body.hasClass('light-mode');
         const newTheme = !isCurrentlyLight;
-        
+
+        // local storage use to save the users theme, in case of refresh etc it will keep their choice
         localStorage.setItem('theme', newTheme ? 'light' : 'dark');
         applyTheme(newTheme);
     });
-});
 
+    // getting back to top logic button
+    const $backToTopBtn = $('#backToTop');
 
+    $(window).on('scroll', function() {
+        // this bit of code checks how far user is scrolled down, cause when the user is already on the top
+        //the button is pretty much useless and not needed
+        if ($(window).scrollTop() > 300) {
+            $backToTopBtn.show();
+        } else {
+            $backToTopBtn.hide();
+        }
+    });
 
-// back to top button logic
-const backToTopBtn = document.getElementById('backToTop');
+    $backToTopBtn.on('click', function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
 
-window.onscroll = function() {
-    // this makes the button appear after scrolling down 300px, and disappear when above that cause why would you need it before that.
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
+    // forcing the video to play on mopbile bug fix - wasnt playing automatically on mobile
+    const $bgVideo = $('.bg-video');
+
+    if ($bgVideo.length) {
+        $bgVideo[0].play().catch(() => {
+            // just incase the inital play command dosent work, when user touches ANYWHERE, it will force play
+            $(document).one('touchstart', () => {
+                $bgVideo[0].play();
+            });
+        });
     }
-};
 
-//keeping the nice trans 
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
 });
-
-// bug fix - this will hopefully force the video to play on mobile automatically
-const bgVideo = document.querySelector('.bg-video');
-
-if (bgVideo) {
-    bgVideo.play().catch(() => {
-        document.addEventListener('touchstart', () => {
-            bgVideo.play();
-        }, { once: true });
-    });
-}
 

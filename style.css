@@ -48,13 +48,6 @@ body.light-mode #themeToggle {
     border-color: #111111; 
 }
 
-body.light-mode .nav-links a:hover,
-body.light-mode #themeToggle:hover {
-    color: #ff9800;
-    border-color: #ff9800;
-}
-
-
 body.light-mode .box,
 body.light-mode .form-success-content {
     background-color: #ffffff;
@@ -84,14 +77,6 @@ body.light-mode footer {
 body.light-mode .bg-video {
     filter: brightness(0.8); 
 }
-
-body.light-mode .about h2,
-body.light-mode .contact h2,
-body.light-mode .about p,
-body.light-mode .contact p {
-    color: #111111;
-}
-
 
 .logo a {
     text-decoration: none;
@@ -145,7 +130,7 @@ body.light-mode .contact p {
 
 }
 
-video::-webkit-media-controls { /* regradless if video plays or not, this is gonna hide that play video button thing */
+video::-webkit-media-controls {
     display: none !important;
 }
 
@@ -425,25 +410,18 @@ footer {
     transition: transform 0.1s ease;
 }
 
-    #backToTop {
-        display: none; 
-        padding-top: 10px;
-    }
-
-
-    body.light-mode .control-btn {
-        color: #111111;
-        background-color: #ff6b35; 
-    }
-
-.back-to-top:active {
-    transform: scale(0.9); 
+#backToTop {
+    display: none; 
+    padding-top: 10px;
 }
 
+body.light-mode .control-btn {
+    color: #111111;
+    background-color: #ff6b35; 
+}
 
-body.light-mode .back-to-top {
-    background-color: #ff6b35;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.control-btn:active {
+    transform: scale(0.9); 
 }
 
 @media (max-width: 768px) {
