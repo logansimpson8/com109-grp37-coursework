@@ -9,7 +9,7 @@ $(document).ready(function() { // now using j query
 
     $('#closeformBtn').on('click', function() {
         $('#successform').fadeOut();
-        $('html, body').animate({
+        $('html, body').stop.animate({
             scrollTop: 0
         }, 800);
     });
@@ -60,7 +60,7 @@ $(document).ready(function() { // now using j query
     });
 
     $backToTopBtn.on('click', function() {
-        $('html, body').animate({
+        $('html, body').stop().animate({
             scrollTop: 0
         }, 800);
     });
