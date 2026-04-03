@@ -300,6 +300,7 @@ video::-webkit-media-controls {
     border-left: 4px solid var(--gym-orange);
     cursor: pointer;
     transition: 0.3s;
+    background-color: rgba(255, 107, 53, 0.08);
 }
 
 .box:hover {
@@ -397,6 +398,7 @@ footer {
     background: var(--gym-black);
     padding: 20px;
     border-top: 2px solid var(--gym-orange);
+    margin: 0;
 }
 
 /* success form overlay */
@@ -509,6 +511,10 @@ body.light-mode #map {
 }
 
 @media (max-width: 768px) {
+    .landing {
+        margin-top: 0;
+    }
+
     .navbar {
         display: none;
     }
@@ -563,6 +569,7 @@ body.light-mode #map {
     .about, .contact {
         padding: 60px 20px;
         min-height: auto;
+        background-color: var(--gym-dark);
     }
 
     .contact-form {
@@ -586,5 +593,18 @@ body.light-mode #map {
         height: 300px;
         margin: 30px 0;
         pointer-events: none;
+    }
+
+    .box {
+        background-color: rgba(255, 107, 53, 0.08);
+    }
+
+    .box:active {
+        background: var(--gym-black);
+        transform: translateY(-5px);
+    }
+
+    .box:active img {
+        filter: brightness(1.3);
     }
 }
