@@ -1,15 +1,15 @@
-$(document).ready(function() { // now using j query
+$(document).ready(function() {
 
     // contact us form submission
     $('.contact-form').on('submit', function(event) {
         event.preventDefault();
-        $('#successform').fadeIn();
+        $('#successform').addClass('active').fadeIn();
         this.reset();
     });
 
     $('#closeformBtn').on('click', function() {
-        $('#successform').fadeOut();
-        $('html, body').stop.animate({
+        $('#successform').removeClass('active').fadeOut();
+        $('html, body').stop().animate({
             scrollTop: 0
         }, 800);
     });
@@ -46,12 +46,32 @@ $(document).ready(function() { // now using j query
         applyTheme(newTheme);
     });
 
-    // getting back to top logic button
+    // bug fix: the nav bar theme button wasnt working because it was only targeting the .themeToggle class, but the nav bar button also has the control-btn class, so i had to add a separate event listener for it
+    $('#themeToggle').on('click', function() {
+        const isCurrentlyLight = $body.hasClass('light-mode');
+        const newTheme = !isCurrentlyLight;
+
+        localStorage.setItem('theme', newTheme ? 'light' : 'dark');
+        applyTheme(newTheme);
+    });
+
+    // Smooth scroll for nav links
+    $('.nav-links a[href^="#"], .btn-light[href^="#"], .btn-dark[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        const $target = $(target);
+        
+        if ($target.length) {
+            $('html, body').stop().animate({
+                scrollTop: $target.offset().top - 70
+            }, 800);
+        }
+    });
+
+    // Back to top button
     const $backToTopBtn = $('#backToTop');
 
     $(window).on('scroll', function() {
-        // this bit of code checks how far user is scrolled down, cause when the user is already on the top
-        //the button is pretty much useless and not needed
         if ($(window).scrollTop() > 300) {
             $backToTopBtn.show();
         } else {
