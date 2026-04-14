@@ -609,27 +609,27 @@ body.light-mode #map {
     }
 }
 
-.faq {
+.helpfaq {
     min-height: 100vh;
     padding: 100px 50px;
     background: var(--gym-dark);
     text-align: center;
 }
 
-.faq h2 {
+.helpfaq h2 {
     font-size: 40px;
     color: var(--gym-orange);
     margin-bottom: 20px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.faq p {
+.helpfaq p {
     color: var(--gym-white);
     margin-bottom: 40px;
     font-size: 16px;
 }
 
-.faq-container {
+.helpfaq-container {
     max-width: 900px;
     margin: 0 auto;
     text-align: left;
@@ -638,7 +638,7 @@ body.light-mode #map {
     gap: 25px;
 }
 
-.faq-item {
+.helpfaq-item {
     background: rgba(255, 107, 53, 0.08);
     border-left: 4px solid var(--gym-orange);
     padding: 20px;
@@ -646,35 +646,35 @@ body.light-mode #map {
     transition: 0.3s;
 }
 
-.faq-item:hover {
+.help-item:hover {
     background: var(--gym-black);
     transform: translateY(-5px);
 }
 
-.faq-item h3 {
+.helpfaq-item h3 {
     color: var(--gym-orange);
     font-size: 20px;
     margin-bottom: 10px;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.faq-item p {
+.helpfaq-item p {
     color: var(--gym-white);
     font-size: 15px;
 }
 
 /* Light mode */
-body.light-mode .faq {
+body.light-mode .helpfaq {
     background: var(--gym-white);
     color: var(--gym-black);
 }
 
-body.light-mode .faq-item {
+body.light-mode .helpfaq-item {
     background: var(--gym-orange-light);
     color: var(--gym-black);
 }
 
-body.light-mode .faq-item p,
-body.light-mode .faq-item h3 {
+body.light-mode .helpfaq-item p,
+body.light-mode .helpfaq-item h3 {
     color: var(--gym-black);
 }
