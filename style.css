@@ -678,3 +678,144 @@ body.light-mode .helpfaq-item p,
 body.light-mode .helpfaq-item h3 {
     color: var(--gym-black);
 }
+
+.shop {
+    min-height: 100vh;
+    padding: 100px 50px;
+    background: var(--gym-dark);
+    text-align: center;
+}
+
+.shop h2 {
+    font-size: 80px;
+    color: var(--gym-orange);
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.shop p {
+   font-size: 20px;
+    color: var(--gym-white);
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.shop h3 {
+    font-size: 20px;
+    color: var(--gym-orange);
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', 'sans-sherif';
+    letter-spacing: 1px;
+}
+
+
+.shopbox {
+max-width: 900px;
+text-align: left;
+gap: 30px;
+}
+
+.buynow {
+width: 110px;
+height: 40px;
+background: var(--gym-orange);
+cursor: pointer;
+border: transparent;
+border-radius: 12px;
+}
+
+.addtocart {
+    width: 110px;
+    height: 40px;
+    background: var(--gym-orange);
+    cursor: pointer;
+    border: transparent;
+    border-radius: 12px;
+}
+
+select {
+    width: 110px;
+    height: 40px;
+    background-color: var(--gym-orange);
+    cursor: pointer;
+    border: transparent;
+    border-radius: 12px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.slideshowcontainer{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slidesfade{
+    display:none;
+}
+
+.prev, .next{
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: var(--gym-orange-light);
+transition: 0.6s, ease;
+user-select: none;
+}
+
+.next{
+    right: 0;
+    border: 3px 0 0 3px;
+}
+
+.numtxt{
+    color: var(--gym-white);
+    font-size: 12px;
+    position: absolute;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; 
+}
+
+.active{
+    background-color: var(--gym-orange-light);
+}
+
+.fade{
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+body.light-mode .shop {
+background: var(--gym-white);
+color: var(--gym-black)
+}
+
+body.light-mode .shopbox{
+    background: var(--gym-white);
+    color: var(--gym-black)
+}
+
+body.light-mode .shop p{
+   color: var(--gym-black); 
+}
