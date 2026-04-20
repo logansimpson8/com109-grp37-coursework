@@ -1,282 +1,281 @@
-<html>
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Joker Athletics - Belfast</title>
-            <link rel="stylesheet" href="style.css">
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        </head>
-        <body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joker Athletics - Belfast</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
         
-            <header class="navbar">
-                <div class="logo">
-                    <a href="#home">Joker Athletics</a>
-                </div>
-                <nav class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#helpandfaq">Help & FAQ</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#shop">Shop</a>
-                    <button id="themeToggle" style="cursor: pointer; padding: 5px 10px; border-radius: 5px; border: 1px solid #ccc; background: transparent;">Dark Mode</button>
-                </nav>
-            </header>
-            
-            <!-- first landing page, whats seen when webpage opened -->
-            <div class="landing" id="home">
-                
-                <video autoplay loop muted playsinline webkit-playsinline class="bg-video">
-                    <source src="gym-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+        <header class="navbar">
+            <div class="logo">
+                <a href="#home">Joker Athletics</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#helpfaq">Help & FAQ</a>
+                <a href="#contact">Contact</a>
+                <a href="#shop">Shop</a>
+                <button id="themeToggle" style="cursor: pointer; padding: 5px 10px; border-radius: 5px; border: 1px solid #ccc; background: transparent;">Dark Mode</button>
+            </nav>
+        </header>
+        
+        <!-- Landing page section -->
+        <div class="landing" id="home">
+            <video autoplay loop muted playsinline webkit-playsinline class="bg-video">
+                <source src="gym-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-                <div class="landing-content">
-                    <h1>Joker Athletics</h1>
-                    <p>Transform your body, elevate your mind. Join Belfast's premier fitness destination.</p>
-                    <div class="buttons">
-                        <a href="#about-scroll" class="btn-light">Learn More</a>
-                        <a href="#contact" class="btn-light">Contact Us</a>
-                        <a href="#" class="btn-dark">Join Now</a>
-                        <a href="#shop" class="btn-light">Shop</a>
-                        <!-- update # when i get the links from group -->
-                    </div>
+            <div class="landing-content">
+                <h1>Joker Athletics</h1>
+                <p>Transform your body, elevate your mind. Join Belfast's premier fitness destination.</p>
+                <div class="buttons">
+                    <a href="#about-scroll" class="btn-light">Learn More</a>
+                    <a href="#contact" class="btn-light">Contact Us</a>
+                    <a href="#helpfaq" class="btn-light">FAQ</a>
+                    <a href="#" class="btn-dark btn-cta">Join Now</a>
+                    <a href="#shop" class="btn-light">Shop</a>
                 </div>
             </div>
-            
-            <hr class = "orange-bar">
+        </div>
+        
+        <hr class="orange-bar">
 
-            <!-- about area, where i need to link rest of groups pages -->
-            <div class="about" id="about">
-                <div id="about-scroll"></div>
-                <h2>About Joker Athletics</h2>
-                <p>Located in the heart of Belfast, Joker Athletics offers state-of-the-art facilities, expert trainers, and a welcoming community. Whether you're a beginner or elite athlete, we have the perfect program for you.</p>
-                
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.1234567890!2d-5.9301!3d54.5973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486108cc3b1e6f6d%3A0x123456789!2sBelfast%20City%20Centre!5e0!3m2!1sen!2suk!4v1234567890123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-                <div class="boxes">
-                    <div class="box">
-                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=400&q=80" alt="24/7 Access">
-                        <h3>24/7 Access</h3>
-                        <p>Train on your schedule</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80" alt="Expert Trainers">
-                        <h3>Expert Trainers</h3>
-                        <p>Certified professionals</p>
-                    </div>
-                    <div class="box">
-                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="Modern Equipment">
-                        <h3>Modern Equipment</h3>
-                        <p>Latest fitness tech</p>
-                    </div>
+        <!-- About section -->
+        <div class="about" id="about">
+            <div id="about-scroll"></div>
+            <h2>About Joker Athletics</h2>
+            <p>Located in the heart of Belfast, Joker Athletics offers state-of-the-art facilities, expert trainers, and a welcoming community. Whether you're a beginner or elite athlete, we have the perfect program for you.</p>
+            
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2309.1234567890!2d-5.9301!3d54.5973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486108cc3b1e6f6d%3A0x123456789!2sBelfast%20City%20Centre!5e0!3m2!1sen!2suk!4v1234567890123" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="boxes">
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=400&q=80" alt="24/7 Access">
+                    <h3>24/7 Access</h3>
+                    <p>Train on your schedule</p>
+                </div>
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80" alt="Expert Trainers">
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals</p>
+                </div>
+                <div class="box">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=80" alt="Modern Equipment">
+                    <h3>Modern Equipment</h3>
+                    <p>Latest fitness tech</p>
                 </div>
             </div>
-            
-            <hr class = "orange-bar">
+        </div>
+        
+        <hr class="orange-bar">
 
-            <!-- contact form -->
-            <div class="contact" id="contact">
-                <h2>Get In Touch</h2>
-                <p>Have questions? We will answer.</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn-dark">Send Message</button>
-                </form>
+        <!-- Contact section -->
+        <div class="contact" id="contact">
+            <h2>Get In Touch</h2>
+            <p>Have questions? We will answer.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-dark">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Success overlay -->
+        <div id="successform" class="form-overlay">
+            <div class="form-success-content">
+                <h3>Message Received!</h3>
+                <p>We will get back to you shortly.</p>
+                <button id="closeformBtn" class="btn-dark">OK</button>
             </div>
-            
+        </div>
 
-            <!-- this is the overlay that appears when form submitted, wont see normally -->
-            <div id="successform" class="form-overlay">
-                <div class="form-success-content">
-                    <h3>Message Received!</h3>
-                    <p>We will get back to you shortly.</p>
-                    <button id="closeformBtn" class="btn-dark">OK</button>
-                </div>
-            </div>
+        <!-- Mobile floating controls -->
+        <div class="floating-controls">
+            <button class="themeToggle control-btn" aria-label="Toggle Theme">L</button>
+            <button id="backToTop" class="control-btn" aria-label="Back to Top">^</button>
+        </div>
 
-            <!-- this is mobile only, its how i will allow user back to top without nav bar -->
-            <div class="floating-controls">
-                <button class="themeToggle control-btn" aria-label="Toggle Theme">L</button>
-                <button id="backToTop" class="control-btn" aria-label="Back to Top">^</button>
-            </div>
+        <hr class="orange-bar">
 
+        <!-- FAQ section -->
         <section class="helpfaq" id="helpfaq">
             <h2>Frequently Asked Questions</h2>
-             <p>Your most common questions answered in one place.</p>
-             
-        <div class="helpfaq-container">
+            <p>Your most common questions answered in one place.</p>
+            
+            <div class="helpfaq-container">
+                <div class="helpfaq-item">
+                    <h3>What services does the gym offer?</h3>
+                    <p>We provide strength training, cardio equipment, personal coaching, and group fitness classes designed for all experience levels.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>What services does the gym offer?</h3>
-            <p>We provide strength training, cardio equipment, personal coaching, and group fitness classes designed for all experience levels.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Do I need a membership to visit?</h3>
+                    <p>Yes, a membership is required for full access. However, we also offer day passes for visitors who want to try the gym before joining.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>Do I need a membership to visit?</h3>
-            <p>Yes, a membership is required for full access. However, we also offer day passes for visitors who want to try the gym before joining.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>How do I contact the gym?</h3>
+                    <p>You can use the contact form on our website. Once submitted, you'll see a confirmation message letting you know it was received.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>How do I contact the gym?</h3>
-            <p>You can use the contact form on our website. Once submitted, you’ll see a confirmation message letting you know it was received.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Why does the website have Light and Dark Mode?</h3>
+                    <p>We added theme switching so you can browse comfortably in any environment. Your preference is saved automatically for future visits.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>Why does the website have Light and Dark Mode?</h3>
-            <p>We added theme switching so you can browse comfortably in any environment. Your preference is saved automatically for future visits.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Is the background video supposed to autoplay?</h3>
+                    <p>Yes. On mobile devices, autoplay can be restricted, so the site includes a fallback that plays the video once you tap anywhere on the screen.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>Is the background video supposed to autoplay?</h3>
-            <p>Yes. On mobile devices, autoplay can be restricted, so the site includes a fallback that plays the video once you tap anywhere on the screen.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>How do I navigate the website?</h3>
+                    <p>Use the navigation bar on desktop or the floating buttons on mobile. All links include smooth scrolling for a seamless experience.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>How do I navigate the website?</h3>
-            <p>Use the navigation bar on desktop or the floating buttons on mobile. All links include smooth scrolling for a seamless experience.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Where is the gym located?</h3>
+                    <p>You can find our exact location on the interactive map in the Contact section of the website.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>Where is the gym located?</h3>
-            <p>You can find our exact location on the interactive map in the Contact section of the website.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Do you offer personal training?</h3>
+                    <p>Yes, we offer one‑on‑one personal training sessions tailored to your goals. Contact us for availability.</p>
+                </div>
 
-        <div class="helpfaq-item">
-            <h3>Do you offer personal training?</h3>
-            <p>Yes, we offer one‑on‑one personal training sessions tailored to your goals. Contact us for availability.</p>
-        </div>
+                <div class="helpfaq-item">
+                    <h3>Can I cancel or change my membership?</h3>
+                    <p>Membership changes can be made by contacting our support team. We'll help you adjust or cancel your plan anytime.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="helpfaq-item">
-            <h3>Can I cancel or change my membership?</h3>
-            <p>Membership changes can be made by contacting our support team. We’ll help you adjust or cancel your plan anytime.</p>
-        </div>
+        <hr class="orange-bar">
 
-    </div>
-</section>
-
-<hr class="orange-bar"> 
+        <!-- Shop section -->
         <div class="shop" id="shop">
             <h2>Shop</h2>
             <p>This is our online shop, at the moment we will only be accepting orders of 5 or less on each product.</p>
             <div class="shopbox">
             
-            <div class="shopitem">
-             <img src="https://primosportsuk.com/cdn/shop/files/IMG_6777.jpg?v=1761924996&width=600">
-             <h3>Protein Powder</h3>
-                <p>A wide range of protein to help you further your progress and continue to grow. </p>
-                <div><body>Price: £29.95</body></div>
-                <label for="protein"></label>
-                <select name="protein" id="protein">
-                <option name="whichpro">Which Flavour?</option>
-                <option value="Chocbrow">Chocolate Brownie</option>
-                <option value="icecre">Choctella Ice Cream</option>
-                <option value="cincook">Cinnamon Cookie Dough</option>   
-                </select>
-                <label for="quantity"></label>
-                <select name="quantity" id="quantity">
-                    <option value="howmany">How many?</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button class="buynow">Buy Now</button>
-                <button class="addtocart">Add To Cart</button> 
+                <div class="shopitem">
+                    <img src="https://primosportsuk.com/cdn/shop/files/IMG_6777.jpg?v=1761924996&width=600" alt="Protein Powder">
+                    <h3>Protein Powder</h3>
+                    <p>A wide range of protein to help you further your progress and continue to grow.</p>
+                    <div>Price: £29.95</div>
+                    <label for="protein">Flavour:</label>
+                    <select name="protein" id="protein">
+                        <option value="">Which Flavour?</option>
+                        <option value="Chocbrow">Chocolate Brownie</option>
+                        <option value="icecre">Choctella Ice Cream</option>
+                        <option value="cincook">Cinnamon Cookie Dough</option>   
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <select name="quantity" id="quantity">
+                        <option value="">How many?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="buynow">Buy Now</button>
+                    <button class="addtocart">Add To Cart</button> 
+                </div>
+
+                <div class="shopitem">
+                    <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/10529742-1515282056955970.jpg&format=webp&auto=avif&crop=900,900,smart" alt="Creatine Monohydrate">
+                    <h3>Creatine Monohydrate</h3>
+                    <p>Creatine is the perfect supplement to help your muscles recover after a hard session. All natural and a must have in your supplement stack.</p>
+                    <div>Price: £21.49</div>
+                    <label for="quantity2">Quantity:</label>
+                    <select name="quantity" id="quantity2">
+                        <option value="">How many?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="buynow">Buy Now</button>
+                    <button class="addtocart">Add to Cart</button>
+                </div>
+
+                <div class="shopitem">
+                    <div class="slidecontainer">
+                        <div class="slidesfade">
+                            <div class="numtxt">1/5</div>
+                            <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-CherryCola.webp?v=1776420886&width=823" alt="Pre-Workout Cherry Cola" style="width:100%">
+                        </div>
+
+                        <div class="slidesfade">
+                            <div class="numtxt">2/5</div>
+                            <img src="https://appliednutrition.uk/cdn/shop/files/Untitled_design_8_e5c297d8-458c-40da-bee4-b7da55c6c4bd.webp?v=1776420886&width=823" alt="Pre-Workout Cool Watermelon" style="width:100%">
+                        </div>
+
+                        <div class="slidesfade">
+                            <div class="numtxt">3/5</div>
+                            <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-IcyBlueRaz.webp?v=1776420886&width=990" alt="Pre-Workout Icy Blue Razz" style="width:100%">
+                        </div>
+
+                        <div class="slidesfade">
+                            <div class="numtxt">4/5</div>
+                            <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-FruitPunch.webp?v=1776420886&width=990" alt="Pre-Workout Fruit Punch" style="width: 100%">
+                        </div>
+
+                        <div class="slidesfade">
+                            <div class="numtxt">5/5</div>
+                            <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-SourApple.webp?v=1776420886&width=990" alt="Pre-Workout Sour Apple" style="width: 100%">
+                        </div>    
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+
+                    <h3>Pre Workout</h3>
+                    <p>The Perfect thing to give you the boost of energy that you need for your workouts.</p>
+                    <div>Price: £27.95</div>
+                    <label for="pre">Flavour:</label>
+                    <select name="pre" id="pre">
+                        <option value="">Which Flavour?</option>
+                        <option value="chercola">Cherry Cola</option>
+                        <option value="coolwater">Cool Watermelon</option>
+                        <option value="blueraz">Icy Blue Razz</option>
+                        <option value="fruitpunch">Fruit Punch</option>
+                        <option value="sourapp">Sour Apple</option>
+                    </select>
+                    <label for="quantity3">Quantity:</label>
+                    <select name="quantity" id="quantity3">
+                        <option value="">How many?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button class="buynow">Buy Now</button>
+                    <button class="addtocart">Add to Cart</button>
+                </div>
             </div>
-
-            <div class="shopitem">
-                <img src="https://www.myprotein.com/images?url=https://static.thcdn.com/productimg/original/10529742-1515282056955970.jpg&format=webp&auto=avif&crop=900,900,smart" >
-                <h3>Creatine Monohydrate</h3>
-                <p>Creatine is the perfect supplement to help your muscles recover after a hard session. All natural and a must have in your supplement stack.</p>
-                <div><body>Price: £21,49</body></div>
-                <label for="quantity"></label>
-                <select name="quantity" id="quantity">
-                    <option value="howmany">How many?</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button class="buynow">Buy Now</button>
-                <button class="addtocart">Add to Cart</button>
-
-            </div>
-
-            <div>
-                <!--The slide show funtion used for all shop items-->
-                <div class="slidecontainer">
-                <div class="slidesfade">
-                    <div class="numtxt">1/5</div>
-                    <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-CherryCola.webp?v=1776420886&width=823" style="width:100%">
-                </div>
-
-                <div class ="slidesfade">
-                    <div class="numtxt">2/5</div>
-                    <img src="https://appliednutrition.uk/cdn/shop/files/Untitled_design_8_e5c297d8-458c-40da-bee4-b7da55c6c4bd.webp?v=1776420886&width=823" style="width:100%">
-                </div>
-
-                <div class="slidesfade">
-                    <div class="numtxt">3/5</div>
-                    <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-IcyBlueRaz.webp?v=1776420886&width=990" style="width:100%">
-                </div>
-
-                <div class="slidesfade">
-                    <div class="numtxt">4/5</div>
-                    <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-FruitPunch.webp?v=1776420886&width=990" style="width: 100%">
-                </div>
-
-                <div class="slidesfade">
-                    <div class="numtxt">5/5</div>
-                    <img src="https://appliednutrition.uk/cdn/shop/files/ABEUltimatePre-Workout375g-SourApple.webp?v=1776420886&width=990" style="width: 100%">
-                </div>    
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
-
-                <h3>Pre Workout</h3>
-                <p>The Perfect thing to give you the boost of energy that you need for your workouts.</p>
-                <div><body>Price: £27.95</body></div>
-                <label for="pre"></label>
-               <select name="pre" id="pre">
-                <option value="flavpre">Which Flavour?</option>
-                <option value="chercola">Cherry Cola</option>
-                <option value="coolwater">Cool Watermelon</option>
-                <option value="blueraz">Icy Blue Razz</option>
-                <option value="fruitpunch">Fruit Punch</option>
-                <option value="sourapp">Sour Apple</option>
-               </select>
-                <label for="quantity"></label>
-                <select name="quantity" id="quantity">
-                    <option value="howmany">How many?</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-                <button class="buynow">Buy Now</button>
-                <button class="addtocart">Add to Cart</button>
-
-            </div>
-
         </div>
         
-            <script src="script.js"></script>
-        </body>
+        <script src="script.js"></script>
+    </body>
 </html>
 
 
