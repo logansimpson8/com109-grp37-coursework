@@ -1,0 +1,135 @@
+/* Page background + font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main checkout container */
+.checkout-container {
+  background: #ffffff;
+  padding: 40px;
+  width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Section titles */
+.checkout-container h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Columns */
+.checkout-column {
+  flex: 1;
+  min-width: 260px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+
+/* Inputs + selects */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+  border-color: #ff9900;
+  outline: none;
+}
+
+/* Accepted cards row */
+.card-icons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 15px;
+}
+
+.card-icons img {
+  height: 24px;
+}
+
+/* Checkbox row */
+.checkbox-row {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Submit / checkout button */
+.btn-checkout {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-checkout:hover {
+  background-color: #e68a00;
+}
+
+.left-side {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.alt-methods {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.alt-methods input[type="image"] {
+  width: 100px;
+  height: 70px;
+  max-width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-color: #020202;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.img{
+    width: 60px;
+    height: 70px;
+}
+.card-images {
+    display: flex;
+    gap: 15px;
+}
+

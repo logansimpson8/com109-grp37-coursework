@@ -1,0 +1,138 @@
+ .class-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcc00; 
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  margin-top: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.class-box:hover {
+  background-color: #ffa500; 
+}
+.toggle {
+  font-size: 20px;
+}
+.class-text {
+  display: none;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 594px;
+  height: 725px;
+  border-radius: 10px;
+  padding-top: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+page-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+}
+.info-panel {
+  background-color: #f7d100;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  font-weight: bold;
+}
+
+.info-panel h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.info-panel p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.schedule-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: flex-start;
+  background-color: #f7d100;
+  padding: 40px;
+  border-radius: 10px;
+  
+}
+
+.left {
+  flex: 1;
+  max-width: 50%;
+}
+.right-boxes {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width : 100%;
+  max-width: 400px;
+  gap: 10px;
+}
+
+.seperator {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 10px 0;
+}
+
+p1 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: bold;
+}
+
+.Nav-Bar{
+  position:fixed;
+  top: 0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 20px 50px;
+  background: #f7d100;
+  border-bottom: 2px solid;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  
+}
+
+.Nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.Nav-links a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.Nav-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+

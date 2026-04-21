@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="payment.css">
+    <title>Payment</title>
+</head>
+<body>
+ 
+    <div class="accepted-cards">
+        <h2>Accepted Cards:</h2>
+        <div class="card-images">
+            <img src="Visa.png" alt="Visa" class="img">
+            <img src="MasterCard.png" alt="MasterCard" class="img">
+            <img src="Amex.png" alt="American Express" class="img">
+        </div>
+    </div>
+    
+    <div class="checkout-container">
+    <div class="left-side">
+        <h1>Checkout</h1>
+        <div class="alt-methods">
+        <h2>Other payment options:</h2>
+            <input type="image" src="appleP.png" name="saveForm" class="alt-method" />
+            <input type="image" src="Gpay.jpg" name="saveForm" class="alt-method" />
+            <input type="image" src="paypal2.png" name="saveForm" class="alt-method" />
+        </div>
+    
+
+        <form action="submit_form.php">
+            <label for="CardName">CardholderName</label>
+            <input type="text" id="CardName" name="CardName" placeholder="Cardholder name...">
+
+            <label for ="CardNumber">CardNumber</label>
+            <input type="text" id="CardNumber" name="CardNumber" placeholder="Card number...">
+
+            <label for="CardType">CardType</label>
+            <select id="CardType" name="CardType">
+                <option value="">Select card type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select>
+
+            <label for ="ExpDateMonth">ExpDateMonth</label>
+            <input type="text" id="ExpDateMonth" name="ExpDateMonth" placeholder="Expiration date...">
+
+            <label for ="ExpDateYear">ExpDateYear</label>
+            <input type="text" id="ExpDateYear" name="ExpDateYear" placeholder="Expiration date...">
+
+            <label for="CVV">CVV</label>
+            <input type="text" id="CVV" name="CVV" placeholder="CVV...">
+
+            <button type="submit" class="btn-checkout">Complete checkout</button>
+
+
+        </form>
+    </div>
+  
+<script type="text/javascript" src="paymentvalidation.js"></script>
+
+</body>
+</html>

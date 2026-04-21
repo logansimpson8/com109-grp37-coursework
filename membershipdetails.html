@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="membershipdetails.css">
+    <title>Membership Details</title>
+</head>
+<body>
+
+    <h1>membership details</h1>
+
+    <div class="container">
+        <form action="submit_form.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email...">
+
+            <label for="phone">phone number</label>
+            <input type="text" id="phone" name="phone" placeholder="Phone number...">
+
+            <label for="Gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address...">
+            
+             <label for="city">City/town</label>
+            <input type="text" id="city" name="city/Town" placeholder="City/town...">
+
+            <label for="postalcode">Postal code</label>
+            <input type="text" id="postalcode" name="postalcode" placeholder="Postal code...">
+
+            <button type="submit" class="btn continue">Choose your Membership plan</button>
+
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="detailvalidation.js"></script>   
+</body>
+</html>

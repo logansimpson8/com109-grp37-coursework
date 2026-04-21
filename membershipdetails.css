@@ -1,0 +1,72 @@
+/* Page background + font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Form container */
+.container {
+  background: #ffffff;
+  padding: 40px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 15px;
+}
+
+/* Input fields + dropdown */
+input[type=""],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+  border-color: #ff9900;
+  outline: none;
+}
+
+/* Submit button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #e68a00;
+}
