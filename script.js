@@ -72,10 +72,10 @@ $(document).ready(function() {
     const $backToTopBtn = $('#backToTop');
 
     $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 300) {
-            $backToTopBtn.show();
+        if ($(this).scrollTop() > 300) {
+            $backToTopBtn.fadeIn();
         } else {
-            $backToTopBtn.hide();
+            $backToTopBtn.fadeOut();
         }
     });
 
@@ -83,6 +83,23 @@ $(document).ready(function() {
         $('html, body').stop().animate({
             scrollTop: 0
         }, 800);
+    });
+
+    // Bounce effect on scroll limits
+    let lastScrollTop = 0;
+    $(window).on('scroll', function() {
+        let currentScroll = $(this).scrollTop();
+        let maxScroll = $(document).height() - $(window).height();
+
+        if (currentScroll === 0 && lastScrollTop > 0) {
+            $('body').css('animation', 'bounce 0.6s ease');
+            setTimeout(() => $('body').css('animation', 'none'), 600);
+        } else if (currentScroll === maxScroll && lastScrollTop < maxScroll) {
+            $('body').css('animation', 'bounce 0.6s ease');
+            setTimeout(() => $('body').css('animation', 'none'), 600);
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 
     // forcing the video to play on mopbile bug fix - wasnt playing automatically on mobile
