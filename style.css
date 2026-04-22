@@ -177,7 +177,10 @@ body.light-mode .bg-video {
     align-items: center; 
     text-align: center;
     margin-top: 70px;
+    
 }
+
+
 
 video::-webkit-media-controls {
     display: none !important;
@@ -198,6 +201,7 @@ video::-webkit-media-controls {
 .landing-content {
     position: relative;
     z-index: 1;
+    
 }
 
 .landing h1 {
