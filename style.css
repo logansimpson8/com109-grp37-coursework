@@ -520,7 +520,7 @@ body.light-mode #map {
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 5px;
     }
 
     .nav-links a {
@@ -549,7 +549,7 @@ body.light-mode #map {
         flex-direction: column; 
         width: 100%;
         align-items: center;
-        gap: 58px;
+        gap: 10px;
     }
 
     .btn-light, .btn-dark {
