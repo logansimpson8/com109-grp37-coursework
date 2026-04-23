@@ -177,10 +177,7 @@ body.light-mode .bg-video {
     align-items: center; 
     text-align: center;
     margin-top: 70px;
-    
 }
-
-
 
 video::-webkit-media-controls {
     display: none !important;
@@ -201,7 +198,6 @@ video::-webkit-media-controls {
 .landing-content {
     position: relative;
     z-index: 1;
-    
 }
 
 .landing h1 {
@@ -802,6 +798,22 @@ user-select: none;
 @keyframes fade{
     from {opacity: .4;}
     to {opacity: 1;}
+}
+
+.carousel-img {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.shop-img {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 body.light-mode .shop {
