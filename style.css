@@ -650,7 +650,7 @@ body.light-mode #map {
     transition: 0.3s;
 }
 
-.help-item:hover {
+.helpfaq-item:hover {
     background: var(--gym-black);
     transform: translateY(-5px);
 }
